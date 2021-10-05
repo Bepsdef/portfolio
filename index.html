@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!--LINKS TO CSS-->
+  <link href="./css/style.css" rel="stylesheet">
+  <link href="./css/fonts.css" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <!--LINKS TO JAVA-->
+  <link rel="java" href="./sketch.js">
+
+  <title>gd</title>
+
+</head>
+
+<body>
+
+
+  <!--VIDEO BACKGROUND-->
+  <video class="video-index"  loop="" autoplay="" muted="" playsinline="">
+    <source src="D:\uni\webfolio\foto/vari/VR.mp4" type="video/mp4"/>
+  </video>
+
+
+  <!--NAVBAR RESPONSIVE-->
+
+
+  <div class="topnav" id="myTopnav">
+
+    <span class="full-text"><a href="pj.html">GD</a></span>
+
+    <a class="proj-abo" href="sommario_3.html">Projects</a>
+    <a class="proj-abo" href="about.html">About</a>
+
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="material-icons">add</i>
+    </a>
+
+  </div>
+
+  <!--NAVBAR / / RESPONSIVE JAVA  / INSIDE HTML -->
+
+  <script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+  </script>
+
+
+
+
+
+</body>
+</html>

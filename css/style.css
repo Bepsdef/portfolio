@@ -1,0 +1,781 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  font: inherit;
+}
+
+/*/////////////// GENERAL SETTINS  ///////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+body {
+  font-family: Lausanne;
+  font-size: 16px;
+  color: red;
+  background: white;
+  margin: 0;
+
+}
+
+.italic {
+  font-family: Lausanne-italic;
+}
+
+
+p, header
+{
+  width: 260px;
+  padding-left: 0px;
+}
+
+
+/* font TITOLI GRANDI ABOUT E SOMMARIO */
+
+h2 {
+  font-size: 90px;
+  color: black;
+}
+
+
+
+/* font titoli secondari */
+
+
+
+h1 {
+  font-size: 20px;}
+
+  h3 {
+    color: red;
+    font-size: 20px;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  a:hover {
+    color: white;
+  }
+
+  .NOF-testo a h2:hover {
+    color: white;
+  }
+
+
+  .line-height-bigger {
+    line-height: 1.8;
+  }
+
+
+
+
+
+  /* SCROLLBAR CUSTOM*/
+
+
+
+
+
+  /* width */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    border-radius: 10px;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: lightgrey;
+    border-radius: 10px;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: red;
+  }
+
+
+
+
+
+  /* NAVBAR */
+
+
+  .topnav {
+    overflow: hidden;
+    padding-left: 30px;
+    position: relative;
+  }
+
+
+  .proj-abo {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+
+  .full-text a {
+    font-family: BHV;
+    font-size: 20px;
+    padding-right: 20px;
+    margin-top: -4px;
+  }
+
+
+  .topnav a {
+    float: left;
+    display: block;
+    color: red;
+    text-align: center;
+    padding-top: 25px;
+    text-decoration: none;
+  }
+
+  .topnav a:hover {
+    color: grey;
+  }
+
+  .topnav a.active {
+    color: red;
+  }
+
+  .topnav .icon {
+    display: none;
+  }
+
+
+
+
+  /*INDEX*/
+
+  video{
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  .video-index {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+
+
+  /*ABOUT*/
+
+  /*General*/
+
+
+
+  .generale_about {
+    display: flex;
+    flex-direction: column;
+    height: 93vh;
+    position: relative;
+  }
+
+  .generale_about p, h1, li {
+    color: black;
+  }
+
+  .cv_about ul {
+    padding-left: 30px;
+  }
+
+  .cv_about h1 {
+    padding-left: 30px;
+  }
+
+  .cv_about ul h1 {
+    padding-left: 0px;
+  }
+
+  .cv_about a:hover {
+    color: white;
+  }
+
+  .personal_intro {
+    display: flex;
+    align-items: flex-end;
+  }
+
+
+  .descrizione_about {
+    padding: 180px 30px 30px 30px;
+
+
+  }
+  .descrizione_about a:hover {
+    color: red;
+  }
+
+
+
+  /*CV ABOUT GENERAL*/
+
+
+
+  .cv_about {
+    display: flex;
+    flex-wrap: wrap;
+    background: red;
+  }
+
+  .cv_about ul {
+    padding-right:30px;
+  }
+
+
+  /*contatti*/
+
+  .cv_contatti_about {
+    flex: 33%;
+    padding-top: 25px;
+    padding-bottom: 20px;
+  }
+
+  .cv_contatti_about ul {
+    padding-top: 25px;
+    padding-left: 30px;
+    list-style: none;
+  }
+
+  /*education*/
+
+  .cv_education_about {
+    flex: 33%;
+    padding-top: 25px;
+  }
+
+  .cv_education_about ul {
+    list-style: none;
+    padding-top: 25px;
+    padding-bottom: 20px;
+  }
+
+  /*experiences*/
+
+  .cv_experiences_about {
+    flex: 33%;
+    padding-top: 25px;
+  }
+
+  .cv_experiences_about ul {
+    list-style: none;
+    padding-top: 25px;
+    padding-bottom: 20px;
+  }
+
+  .image_text_hover_name_about a:hover {
+    color: red;
+    font-weight: 400;
+  }
+
+
+  /* freccia nella descrizione> permette di scendere alla sezione contatti e cv*/
+
+
+
+  .arrow_descrizione_about:hover { transform: scale(1.5); }
+
+  .arrow_descrizione_about
+  { transition: all .2s ease-in-out; }
+
+
+  .all_informations_about {
+    display: flex;
+
+  }
+
+
+
+  /*/////////////// LISTA FLEX MENU NOF  ///////////////////////////////////////////////////////////////////////////////////////////// */
+
+  .NOF-principale {
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+  }
+
+  .NOF-box-projects {
+    display: flex;
+  }
+
+  .NOF-box {
+    flex:100%;
+    border-bottom: 1px solid black;
+  }
+
+  .NOF-box-contenuti {
+    padding: 30px;
+    position: relative;
+  }
+
+
+  .NOF-box:hover {
+    background: red;
+  }
+
+  .prog1-box {
+    border-top: 1px solid black;
+  }
+
+  .hiddenimg {
+    display: none;
+  }
+
+
+  .NOF-paragraph{
+    color: black;
+    font-size: 20px;
+    width: auto;
+    padding-left: 10px;
+    padding-top: 20px;
+  }
+
+
+
+  /* TEXT HOVER PHOTO  */
+
+
+  .hide {
+    display: none;
+  }
+
+  /* prog 1 / eat yout veggies  */
+
+  .prog1:hover ~ .hiddenimg {
+    display: block;
+    position: absolute;
+    right: 200px;
+    top:-10px;
+    z-index: 2;
+  }
+
+
+  .prog1:hover + .hide {
+    display: block;
+    color: white;
+  }
+
+
+
+  /* prog 2 / 400g */
+
+
+  .prog2:hover ~ .hiddenimg {
+    display: block;
+    position: absolute;
+    right: 400px;
+    top:-10px;
+    z-index: 2;
+  }
+
+
+  .prog2:hover + .hide {
+    display: block;
+    color: white;
+  }
+
+
+
+  /* prog 3 / genere urbano */
+
+
+  .prog3:hover ~ .hiddenimg {
+    display: block;
+    position: absolute;
+    right: 200px;
+    top:-50px;
+    z-index: 2;
+  }
+
+
+  .prog3:hover + .hide {
+    display: block;
+    color: white;
+  }
+
+
+  /* prog 4/ unoperuno */
+
+
+  .prog5:hover ~ .hiddenimg {
+    display: block;
+    position: absolute;
+    right: 100px;
+    top:-20px;
+    z-index: 2;
+  }
+
+
+  .prog5:hover + .hide {
+    display: block;
+    color: white;
+  }
+
+  /* prog 5/ Raulino  */
+
+
+  .prog6:hover ~ .hiddenimg {
+    display: block;
+    position: absolute;
+    right: 200px;
+    top:-30px;
+    z-index: 2;
+  }
+
+
+  .prog6:hover + .hide {
+    display: block;
+    color: white;
+  }
+
+
+
+  /* prog 6 / antiqua */
+
+
+  .prog4:hover ~ .hiddenimg {
+    display: block;
+    position: absolute;
+    right: 500px;
+    top:300px;
+    z-index: 2;
+  }
+
+
+  .prog4:hover + .hide {
+    display: block;
+    color: white;
+  }
+
+
+  /* prog 7 / DISCONNECTION */
+
+
+  .prog4:hover ~ .hiddenimg {
+    display: block;
+    position: absolute;
+    right: 400px;
+    top:-20px;
+    z-index: 2;
+  }
+
+
+  .prog4:hover + .hide {
+    display: block;
+    color: white;
+  }
+
+
+
+  /* progetti */
+  /* il body ha class body_progetto per bloccare in pagina PROGETTI lo scroll della sidebar  */
+
+  .body_progetto {
+    overflow:hidden;
+  }
+  /* contenitore generale della pagina*/
+
+  .wrapper {
+    display: flex;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 60px;
+
+  }
+
+  /*parte testuale > titolo progetto informazioni brief e concept */
+
+  .sidebar {
+    display: flex;
+    flex: 3;
+    height: 100vh;
+  }
+
+  .colonna-sx {
+    flex-direction: column;
+  }
+
+  .colonna-dx {
+    padding-left: 80px;
+
+  }
+  .main-content {
+    flex: 5;
+    height: 100vh;
+    overflow: scroll;
+  }
+
+  .titolo_progetto {
+    padding-bottom: 150px;
+  }
+
+  .freccia_link:hover {
+    color: grey;
+  }
+
+  .main-content img {
+    padding-bottom: 20px;
+  }
+
+
+  /*RESPONSIVE */
+  /* Responsive layout - */
+  /* Extra small devices (phones, (less than and more than)600 --> 995-1300) */
+
+
+  @media only screen and (min-width: 955px) and (max-width: 1300px){
+
+    /* ABOUT */
+
+    .generale_about {
+      height: auto;
+    }
+
+    .cv_about {
+      flex-flow: row;
+      flex-wrap: wrap;
+    }
+
+    .line-height {
+      display: none;
+    }
+
+    .arrow_descrizione_about img {
+      width: 20px;
+    }
+
+    /* TESTO GENERALE  */
+
+    h1 {
+      font-size: 20px;
+    }
+
+    h2 {
+      font-size: 60px;
+    }
+
+    p {
+      font-size: 16px;
+    }
+    ul {
+      font-size: 16px;
+    }
+
+    .arrow_descrizione_about img {
+      width: 30px;
+    }
+  }
+
+
+  @media only screen and (min-width: 600px) and (max-width: 955px){
+
+    /* ABOUT */
+
+    .generale_about {
+      height: auto;
+    }
+    .cv_contatti_about {
+      order: 3;
+      background: white;
+    }
+    .cv_about {
+      flex-flow: row;
+      flex-wrap: wrap;
+    }
+
+
+    .line-height {
+      display: none;
+    }
+
+    .arrow_descrizione_about img {
+      width: 20px;
+    }
+
+    /* TESTO GENERALE  */
+
+    h1 {
+      font-size: 20px;
+    }
+
+    h2 {
+      font-size: 50px;
+    }
+
+    p {
+      font-size: 16px;
+    }
+    ul {
+      font-size: 16px;
+    }
+
+    .arrow_descrizione_about img {
+      width: 30px;
+    }
+
+
+    /* PROGETTO  */
+    .body_progetto {
+      overflow:auto;
+    }
+
+
+    .titolo_progetto {
+      font-size: 40px;
+    }
+
+    .wrapper {
+      flex-direction: column;
+    }
+
+
+    .main-content {
+      padding-top: 30px;
+    }
+
+  }
+
+
+
+  @media only screen and (max-width: 600px) {
+
+    /* ABOUT */
+
+    .generale_about {
+      height: auto;
+    }
+
+    .cv_about {
+      flex-flow: wrap column;
+    }
+
+    .cv_contatti_about {
+      order: 3;
+      background: white;
+    }
+
+    .line-height {
+      display: none;
+    }
+
+    .arrow_descrizione_about img {
+      width: 20px;
+    }
+
+    /* TESTO GENERALE  */
+
+    h1 {
+      font-size: 20px;
+    }
+
+    h2 {
+      font-size: 30px;
+    }
+
+    p {
+      font-size: 16px;
+    }
+    ul {
+      font-size: 16px;
+    }
+
+
+    /* SOMMARIO  */
+
+
+    .NOF-paragraph {
+      display: none;
+    }
+
+    .hiddenimg img {
+      display: none;
+    }
+
+
+    /* scrollbar nascosta per visualizzazione telefono */
+
+    ::-webkit-scrollbar {
+      display: none;
+    }
+
+    .body_progetto {
+      overflow:auto;
+    }
+
+    .titolo_progetto {
+      font-size: 40px;
+    }
+
+    .wrapper {
+      flex-direction: column;
+    }
+
+    .sidebar {
+      flex-direction: column;
+    }
+
+    .colonna-dx {
+      display: none;
+    }
+
+    .main-content {
+      padding-top: 30px;
+    }
+
+  }
+
+  /* Extra small devices (phones, 600px and down) */
+  /* SEZIONE SPECIFICA NAVBAR */
+
+  @media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+      padding-right: 30px;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+
+  }
+  .proj-abo {
+    padding-left: 0px;
+  }
+
+}

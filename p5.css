@@ -1,0 +1,42 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  position: fixed;
+}
+canvas {
+  display: block;
+position: fixed;
+width: 100vh;
+height:100vh;
+}
+
+
+.back {
+color: red;
+cursor: pointer;
+
+}
+
+.text {
+  font-family: Lausanne;
+  font-size: 30px;
+  text-align: LEFT;
+  padding-LEFT: 30px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  color:red;
+}
+
+@media only screen and (max-width: 600px) {
+  .text {
+    font-size: 20px;
+
+  }
+
+}
